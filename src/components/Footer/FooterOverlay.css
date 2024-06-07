@@ -1,0 +1,18 @@
+.appFooterOverlay {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+
+.appFooterOverlay-black {
+  height: 25%;
+  background: var(--color-black);
+}
+
+.appFooterOverlay-img {
+  height: 75%;
+}
