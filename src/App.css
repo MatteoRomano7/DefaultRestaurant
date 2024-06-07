@@ -1,3 +1,8 @@
+body {
+  background-color: var(--color-crimson);
+}
+
+
 .sectionPadding {
   padding: 4rem 6rem;
 }
@@ -9,11 +14,11 @@
 }
 
 .appBackground {
-  background: url("./assets/bg.png");
   background-position: center;
   background-size: cover;
   background-repeat: repeat;
   background-attachment: fixed;
+  background-color: var(--color-crimson);
 }
 
 .appWrapper {
@@ -31,6 +36,11 @@
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
+}
+
+#appLogo {
+  width: 110px;
+  height: 110px;
 }
 
 .appWrapper_img {
@@ -53,10 +63,10 @@
 }
 
 .customButton {
-  background-color: var(--color-crimson);
+  background-color: var(--color-pink);
   color: var(--color-black);
   font-family: var(--font-base);
-  font-weight: 700;
+  font-weight: 900;
   letter-spacing: 0.04em;
   line-height: 28px;
   font-size: 16px;
@@ -65,11 +75,12 @@
   border: none;
   outline: none;
   cursor: pointer;
+  
 }
 
 .p_cormorant {
   font-family: var(--font-base);
-  color: var(--color-white);
+  color: var(--color-black);
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: capitalize;
@@ -80,7 +91,7 @@
 
 .p_opensans {
   font-family: var(--font-alt);
-  color: var(--color-white);
+  color: var(--color-black);
   font-weight: 400;
   letter-spacing: 0.04em;
   text-transform: capitalize;
@@ -90,7 +101,7 @@
 
 .headtext__cormorant {
   font-family: var(--font-base);
-  color: var(--color-golden);
+  color: var(--color-azure);
   font-size: 64px;
   line-height: 83.2px;
   letter-spacing: 0.04em;

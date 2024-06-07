@@ -33,7 +33,7 @@
 }
 
 .appAboutUs-content_knife img {
-  height: 910px;
+  height: 200px;
 }
 
 .appAboutUs-content_history {
@@ -52,9 +52,9 @@
   color: var(--color-grey);
 }
 
-@media screen and (min-width: 2000px) {
+@media screen and (max-width: 2000px) {
   .appAboutUs-content_knife img {
-    height: 1110px;
+    height: 300px;
   }
 
   .appAboutUs-content_about p,

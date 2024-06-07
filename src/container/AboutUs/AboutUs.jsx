@@ -9,12 +9,12 @@ const AboutUs = () => (
     id="about"
   >
     <div className="appAboutUs-overlay flexCenter">
-      <img src={images.G} alt="G_overlay" />
+      
     </div>
 
     <div className="appAboutUs-content flexCenter">
       <div className="appAboutUs-content_about">
-        <h1 className="headtext__">About Us</h1>
+        <h1 className="headtext__cormorant">About Us</h1>
         <img src={images.spoon} alt="about_spoon" className="spoon__img" />
         <p className="p_opensans">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra
@@ -27,7 +27,7 @@ const AboutUs = () => (
       </div>
 
       <div className="appAboutUs-content_knife flexCenter">
-        <img src={images.knife} alt="about_knife" />
+      <img src={images.azale} alt="G_overlay" />
       </div>
 
       <div className="appAboutUs-content_history">

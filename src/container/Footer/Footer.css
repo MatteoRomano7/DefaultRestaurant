@@ -8,7 +8,7 @@
   align-items: center;
   flex-direction: column;
 
-  background: var(--color-black);
+  background: var(--color-crimson);
   padding-top: 0;
 }
 
@@ -44,19 +44,19 @@
 }
 
 .appFooter-links_icons svg {
-  color: var(--color-white);
+  color: var(--color-black);
   margin: 0.5rem;
   font-size: 24px;
   cursor: pointer;
 }
 
 .appFooter-links_icons svg:hover {
-  color: var(--color-golden);
+  color: var(--color-azure);
 }
 
 .appFooter-headtext {
   font-family: var(--font-base);
-  color: var(--color-white);
+  color: var(--color-black);
   font-weight: 400;
   letter-spacing: 0.04em;
   text-transform: capitalize;

@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-
   margin-top: 5rem;
 }
 
@@ -30,7 +29,7 @@
   line-height: 41.6px;
   letter-spacing: 0.04em;
   text-transform: capitalize;
-  color: var(--color-golden);
+  color: var(--color-azure);
 }
 
 .appChef-sign img {

@@ -1,7 +1,7 @@
 .appGallery {
   flex-direction: row;
 
-  background: var(--color-black);
+  background: var(--color-crimson);
   padding: 4rem 0 4rem 6rem;
 }
 
@@ -85,10 +85,10 @@
 }
 
 .galleryArrow-icon {
-  color: var(--color-golden);
+  color: var(--color-azure);
   font-size: 2rem;
   cursor: pointer;
-  background: var(--color-black);
+  background: var(--color-crimson);
   border-radius: 5px;
 }
 

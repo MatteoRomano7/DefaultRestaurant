@@ -1,10 +1,6 @@
-.appHeader {
-  background-color: var(--color-black);
-}
-
 .appHeader-h1 {
   font-family: var(--font-base);
-  color: var(--color-golden);
+  color: var(--color-azure);
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: capitalize;
