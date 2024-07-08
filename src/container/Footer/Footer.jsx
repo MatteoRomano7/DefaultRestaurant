@@ -13,7 +13,7 @@ const Footer = () => (
     <div className="appFooter-links">
       <div className="appFooter-links_contact">
         <h1 className="appFooter-headtext">Contact Us</h1>
-        <p className="p_opensans">9 W 53rd St, New York, NY 10019, USA</p>
+        <p className="p_opensans">Via Giuseppe Mazzini, 44, 80038 Pomigliano d'Arco NA</p>
         <p className="p_opensans">+1 212-344-1230</p>
         <p className="p_opensans">+1 212-555-1230</p>
       </div>
@@ -28,6 +28,7 @@ const Footer = () => (
           src={images.spoon}
           className="spoon__img"
           style={{ marginTop: 15 }}
+          alt="spoon"
         />
         <div className="appFooter-links_icons">
           <FiFacebook />

@@ -17,9 +17,7 @@ const AboutUs = () => (
         <h1 className="headtext__cormorant">About Us</h1>
         <img src={images.spoon} alt="about_spoon" className="spoon__img" />
         <p className="p_opensans">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra
-          adipiscing ultrices vulputate posuere tristique. In sed odio nec
-          aliquet eu proin mauris et.
+          Welcome to our modern bar, a place where you can unwind and enjoy a unique atmosphere. Founded in 2020, we strive to provide the best experience for our guests with a wide selection of drinks and a cozy environment.
         </p>
         <button type="button" className="customButton">
           Know More
@@ -34,9 +32,7 @@ const AboutUs = () => (
         <h1 className="headtext__cormorant">Our History</h1>
         <img src={images.spoon} alt="about_spoon" className="spoon__img" />
         <p className="p_opensans">
-          Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat.
-          Risus placerat morbi volutpat habitasse interdum mi aliquam In sed
-          odio nec aliquet.
+          Since our inception in 2020, we have been dedicated to creating a modern bar experience. Our journey began with a vision to blend contemporary design with a welcoming atmosphere, making us a favorite spot for locals and visitors alike.
         </p>
         <button type="button" className="customButton">
           Know More

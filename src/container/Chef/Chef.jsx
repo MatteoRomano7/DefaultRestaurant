@@ -17,14 +17,11 @@ const Chef = () => (
         <div className="appChef-content_quote">
           <img src={images.quote} alt="quote_image" />
           <p className="p_opensans">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit auctor sit .
+            "Cooking is an art, but mixology is a science."
           </p>
         </div>
         <p className="p_opensans">
-          {" "}
-          auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit.
-          Nulla scelerisque scelerisque congue ac consequat, aliquam molestie
-          lectus eu. Congue iaculis integer curabitur semper sit nunc.{" "}
+          "As a chef, I believe in the importance of experimenting with mixology. It allows us to create unique and memorable experiences for our guests. The perfect blend of flavors can elevate any dish and make it unforgettable."
         </p>
       </div>
 

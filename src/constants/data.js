@@ -58,25 +58,22 @@ const cocktails = [
 
 const awards = [
   {
-    imgUrl: images.award02,
-    title: 'Bib Gourmond',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
-  },
-  {
     imgUrl: images.award01,
-    title: 'Rising Star',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
+    title: 'Tre Bicchieri Award',
+    subtitle: 'Gambero Rosso',
   },
   {
-    imgUrl: images.award05,
-    title: 'AA Hospitality',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
+    imgUrl: images.award02,
+    title: 'Best Italian Restaurant Abroad',
+    subtitle: 'Accademia Italiana della Cucina',
   },
   {
     imgUrl: images.award03,
-    title: 'Outstanding Chef',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
-  },
+    title: 'Michelin Star',
+    subtitle: 'Michelin Guide',
+  }
 ];
 
-export default { wines, cocktails, awards };
+const data = { wines, cocktails, awards };
+
+export default data;

@@ -31,8 +31,7 @@ const Gallery = () => {
           className="p_opensans"
           style={{ color: "#AAAAAA", marginTop: "2rem" }}
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat
-          mattis ipsum turpis elit elit scelerisque egestas mu.
+          Follow us on Instagram @azaleflowerbar for the latest updates and stunning photos of our bar.
         </p>
         <button type="button" className="customButton">
           View More

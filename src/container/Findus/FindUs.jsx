@@ -12,7 +12,7 @@ const FindUs = () => (
       </h1>
       <div className="appWrapper-content">
         <p className="p_opensans">
-          Lane Ends Bungalow, Whatcroft Hall Lane, Rudheath, CW9 75G
+        Via Giuseppe Mazzini, 44, 80038 Pomigliano d'Arco NA
         </p>
         <p
           className="p_cormorant"
