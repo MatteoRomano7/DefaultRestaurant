@@ -1,7 +1,5 @@
 .appGallery {
   flex-direction: row;
-
-  background: var(--color-crimson);
   padding: 4rem 0 4rem 6rem;
 }
 
@@ -11,7 +9,6 @@
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-
   min-width: 500px;
   padding-right: 2rem;
 }
@@ -88,7 +85,7 @@
   color: var(--color-azure);
   font-size: 2rem;
   cursor: pointer;
-  background: var(--color-crimson);
+  background: var(--color-hay);
   border-radius: 5px;
 }
 

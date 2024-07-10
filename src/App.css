@@ -1,5 +1,5 @@
 body {
-  background-color: var(--color-crimson);
+  background-color: var(--color-hay);
 }
 
 
@@ -18,7 +18,7 @@ body {
   background-size: cover;
   background-repeat: repeat;
   background-attachment: fixed;
-  background-color: var(--color-crimson);
+  background-color: var(--color-hay);
 }
 
 .appWrapper {

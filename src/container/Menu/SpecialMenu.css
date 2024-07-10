@@ -1,6 +1,5 @@
 .appSpecialMenu {
   flex-direction: column;
-  background: var(--color-crimson);
 }
 
 .appSpecialMenu-title {
