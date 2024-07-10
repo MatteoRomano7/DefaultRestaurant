@@ -1,7 +1,26 @@
-body {
-  background-color: var(--color-hay);
+:root {
+  --color-hay: #f1e5c4;
+  --color-black: #0c0c0c;
+  --color-azure: #313bac;
+  --color-pink: #f5a4a7;
+  --font-base: 'Cormorant Upright', serif;
+  --font-alt: 'Open Sans', sans-serif;
 }
 
+body {
+  background-color: var(--color-hay);
+  color: var(--color-black);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  --color-hay: #1a1a1a;
+  --color-black: #f1f1f1;
+  --color-azure: #4a54d1;
+  --color-pink: #ff7a7e;
+  background-color: var(--color-hay);
+  color: var(--color-black);
+}
 
 .sectionPadding {
   padding: 4rem 6rem;
@@ -25,7 +44,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   min-height: 100vh;
 }
 
@@ -49,7 +67,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
   margin-left: 2rem;
 }
 
@@ -75,7 +92,6 @@ body {
   border: none;
   outline: none;
   cursor: pointer;
-  
 }
 
 .p_cormorant {
@@ -110,6 +126,32 @@ body {
 
 .spoon__img {
   width: 45px;
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  color: var(--color-black);
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dark-mode .theme-toggle {
+  color: var(--color-black);
+}
+
+.dark-mode .appNavbar,
+.dark-mode .appNavbar-smallscreen_overlay {
+  background-color: #2a2a2a;
+}
+
+.dark-mode .p_opensans,
+.dark-mode .p_cormorant {
+  color: var(--color-black);
 }
 
 @media screen and (min-width: 2000px) {
