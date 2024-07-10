@@ -44,9 +44,6 @@ const Navbar = () => {
           Log In / Registration
         </a>
         <div />
-        <a href="/" className="p_opensans">
-          Book Table
-        </a>
         <button onClick={toggleTheme} className="theme-toggle">
           {isDarkMode ? <FaSun /> : <FaMoon />}
         </button>

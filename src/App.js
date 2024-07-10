@@ -13,6 +13,7 @@ import {
 } from "./container";
 import { Navbar } from "./components";
 import "./App.css";
+import Tripadvisor from "./container/Tripadvisor/Tripadvisor";
 
 const App = () => (
   <div>
@@ -24,6 +25,7 @@ const App = () => (
     <Intro />
     <Laurels />
     <Gallery />
+    <Tripadvisor />
     <FindUs />
     <Footer />
   </div>

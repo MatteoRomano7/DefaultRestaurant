@@ -7,7 +7,7 @@
   --font-alt: 'Open Sans', sans-serif;
 }
 
-body {
+body{
   background-color: var(--color-hay);
   color: var(--color-black);
   transition: background-color 0.3s, color 0.3s;
@@ -21,6 +21,7 @@ body.dark-mode {
   background-color: var(--color-hay);
   color: var(--color-black);
 }
+
 
 .sectionPadding {
   padding: 4rem 6rem;
@@ -128,6 +129,11 @@ body.dark-mode {
   width: 45px;
 }
 
+
+.elfsight-app-c08b1302-f2bb-404d-b434-7caad16ed405 {
+  color: white !important;
+}
+
 .theme-toggle {
   background: none;
   border: none;
@@ -144,10 +150,6 @@ body.dark-mode {
   color: var(--color-black);
 }
 
-.dark-mode .appNavbar,
-.dark-mode .appNavbar-smallscreen_overlay {
-  background-color: #2a2a2a;
-}
 
 .dark-mode .p_opensans,
 .dark-mode .p_cormorant {
