@@ -6,7 +6,7 @@ import { images } from "../../constants";
 
 const FindUs = () => (
   <div className="appBackground appWrapper sectionPadding" id="contact">
-    <motion.div>
+    <motion.div {...motionProps}>
     <div className="appWrapper_info">
       <SubHeading title="Contact" />
       <h1 className="headtext__cormorant" style={{ marginBottom: "3rem" }}>
