@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
+import { motion } from "framer-motion";
+import { motionProps, motionPropsNeg } from "../../constants/motionProps";
 import { SubHeading } from "../../components";
 import "./Gallery.css";
 
@@ -7,18 +9,18 @@ const Gallery = () => {
   const scrollRef = React.useRef(null);
 
   useEffect(() => {
-    // Carica lo script Elfsight dopo che il componente Ã¨ stato montato
+    
     const script = document.createElement("script");
     script.src = "https://static.elfsight.com/platform/platform.js";
     script.dataset.useServiceCore = "";
     script.defer = true;
     document.head.appendChild(script);
 
-    // Pulizia: rimuovi lo script quando il componente viene smontato
+    
     return () => {
       document.head.removeChild(script);
     };
-  }, []); // Esegui l'effetto solo una volta
+  }, []); 
 
   const scroll = (direction) => {
     const { current } = scrollRef;
@@ -36,6 +38,7 @@ const Gallery = () => {
   return (
     <div className="appGallery flexCenter">
       <div className="appGallery-content">
+      <motion.div {...motionPropsNeg}>
         <SubHeading title="Instagram" />
         <h1 className="headtext__cormorant">Photo Gallery</h1>
         <p className="p_opensans" style={{ color: "#AAAAAA", marginTop: "2rem" }}>
@@ -45,15 +48,17 @@ const Gallery = () => {
         <button type="button" className="customButton" onClick={openInstagramPopup}>
         View More
       </button>
+        </motion.div>
       </div>
 
-      <div className="appGallery-images" ref={scrollRef}> {/* Applica il ref per lo scorrimento */}
-        {/* Inserisci il codice del widget Elfsight */}
+      <div className="appGallery-images" ref={scrollRef}>         
+      
         <div 
           className="elfsight-app-6c39ce42-425f-43b0-ba58-2316ce2fff0f" 
           data-elfsight-app-lazy
           style={{ fontFamily: 'Open Sans, sans-serif' }}
-        ></div>
+          ></div>
+    
       </div>
 
       {/* Frecce di scorrimento (lasciate invariate) */}

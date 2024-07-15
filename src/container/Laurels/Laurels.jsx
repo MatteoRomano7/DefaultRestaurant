@@ -1,5 +1,6 @@
 import React from "react";
-
+import { motion } from "framer-motion";
+import { motionProps, motionPropsNeg } from "../../constants/motionProps";
 import { SubHeading } from "../../components";
 import { images, data } from "../../constants";
 import "./Laurels.css";
@@ -17,6 +18,7 @@ const AwardCard = ({ award: { imgUrl, title, subtitle } }) => (
 );
 
 const Laurels = () => (
+  <motion.div {...motionProps}>
   <div className="appBackground appWrapper sectionPadding" id="awards">
     <div className="appWrapper_info">
       <SubHeading title="Awards & recognition" />
@@ -33,6 +35,7 @@ const Laurels = () => (
       <img src={images.laurels} alt="laurels_img" />
     </div>
   </div>
+  </motion.div>
 );
 
 export default Laurels;

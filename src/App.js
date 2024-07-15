@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import Loader from "./components/Loader/Loader";
-
 import {
   AboutUs,
   Chef,
@@ -15,6 +14,8 @@ import {
 import { Navbar } from "./components";
 import "./App.css";
 import Tripadvisor from "./container/Tripadvisor/Tripadvisor";
+import { motion } from "framer-motion";
+import { motionProps, motionPropsNeg } from "./constants/motionProps";
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);

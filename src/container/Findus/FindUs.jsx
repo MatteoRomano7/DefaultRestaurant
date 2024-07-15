@@ -1,10 +1,12 @@
 import React from "react";
-
+import { motion } from "framer-motion";
+import { motionProps, motionPropsNeg } from "../../constants/motionProps";
 import { SubHeading } from "../../components";
 import { images } from "../../constants";
 
 const FindUs = () => (
   <div className="appBackground appWrapper sectionPadding" id="contact">
+    <motion.div>
     <div className="appWrapper_info">
       <SubHeading title="Contact" />
       <h1 className="headtext__cormorant" style={{ marginBottom: "3rem" }}>
@@ -31,6 +33,7 @@ const FindUs = () => (
         Visit Us
       </button>
     </div>
+  </motion.div>
 
     <div className="appWrapper_img">
       <img src={images.findus} alt="finus_img" />

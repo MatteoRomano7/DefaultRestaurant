@@ -1,9 +1,10 @@
 :root {
-  --navbar-height: 120px; /* Adjust this value to match your navbar height */
+  --navbar-height: 120px;
   --color-background: #1a1a1a;
   --color-text: #ffffff;
   --color-azure: #4a54d1;
   --color-grey: #aaaaaa;
+  --color-red: #ff0000;
 }
 
 .appNavbar {
@@ -111,6 +112,17 @@
 
 .appNavbar-smallscreen_links li:hover {
   color: var(--color-text);
+}
+
+.scroll-progress {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #e46f87;
+  transform-origin: left;
+  transition: transform 0.1s linear;
 }
 
 body {

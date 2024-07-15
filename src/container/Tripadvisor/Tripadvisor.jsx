@@ -1,6 +1,9 @@
 import React, { useEffect } from "react";
 import "./Tripadvisor.css";
-import { SubHeading } from "../../components";
+import { motion } from "framer-motion";
+import { motionProps, motionPropsNeg } from "../../constants/motionProps";
+import { SubHeading, MenuItem } from "../../components";
+
 
 const Tripadvisor = () => {
   useEffect(() => {
@@ -17,6 +20,7 @@ const Tripadvisor = () => {
 
   return (
     <div className="appGallery flexCenter">
+      <motion.div {...motionProps}>
     <div className="appGallery-content">
     <SubHeading title="TripAdvisor" />
         <h1 className="headtext__cormorant">Recensioni</h1>
@@ -32,9 +36,9 @@ const Tripadvisor = () => {
 
     </div>
     </div>
+    </motion.div>
     </div>
     
-
   );
 };
 

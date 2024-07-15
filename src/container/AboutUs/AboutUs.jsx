@@ -1,13 +1,16 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 import { images } from "../../constants";
+import { motionProps } from "../../constants/motionProps";
 import "./AboutUs.css";
+
 
 const AboutUs = () => (
   <div
-    className="appAboutUs appBackground flexCenter sectionPadding"
-    id="about"
+  className="appAboutUs appBackground flexCenter sectionPadding"
+  id="about"
   >
+    <motion.div {...motionProps}>
     <div className="appAboutUs-overlay flexCenter">
       
     </div>
@@ -39,6 +42,7 @@ const AboutUs = () => (
         </button>
       </div>
     </div>
+    </motion.div>
   </div>
 );
 

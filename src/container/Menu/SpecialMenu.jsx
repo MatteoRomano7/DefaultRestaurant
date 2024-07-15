@@ -1,14 +1,15 @@
 import React from "react";
-
+import { motion } from "framer-motion";
+import { motionProps, motionPropsNeg } from "../../constants/motionProps";
 import { SubHeading, MenuItem } from "../../components";
 import { data, images } from "../../constants";
 import "./SpecialMenu.css";
 
-// Лучше перезагрузить локал хост для тяги данных
 
 const SpecialMenu = () => (
   <div className="appSpecialMenu flexCenter sectionPadding" id="menu">
-    <div className="appSpecialMenu-title">
+    <motion.div {...motionProps}>
+    <div className="appSpecialMenu-title">      
       <SubHeading title="Menu that fits your palatte" />
       <h1 className="headtext__cormorant">Today&apos;s Special</h1>
     </div>
@@ -23,8 +24,8 @@ const SpecialMenu = () => (
               title={wine.title}
               price={wine.price}
               tags={wine.tags}
-            />
-          ))}
+              />
+            ))}
         </div>
       </div>
 
@@ -37,10 +38,10 @@ const SpecialMenu = () => (
         <div className="appSpecialMenu_menu_items">
           {data.cocktails.map((cocktail, index) => (
             <MenuItem
-              key={cocktail.title + index}
-              title={cocktail.title}
-              price={cocktail.price}
-              tags={cocktail.tags}
+            key={cocktail.title + index}
+            title={cocktail.title}
+            price={cocktail.price}
+            tags={cocktail.tags}
             />
           ))}
         </div>
@@ -52,6 +53,7 @@ const SpecialMenu = () => (
         View More
       </button>
     </div>
+          </motion.div>
   </div>
 );
 
