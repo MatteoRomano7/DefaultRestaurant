@@ -20,31 +20,32 @@ const App = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate loading time
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 2000); // Adjust this time as needed
+    }, 2000);
 
     return () => clearTimeout(timer);
   }, []);
 
-  if (isLoading) {
-    return <Loader />;
-  }
-
   return (
-    <div>
-      <Navbar />
-      <Header />
-      <AboutUs />
-      <SpecialMenu />
-      <Chef />
-      <Intro />
-      <Laurels />
-      <Gallery />
-      <Tripadvisor />
-      <FindUs />
-      <Footer />
+    <div className="App">
+      {isLoading ? (
+        <Loader />
+      ) : (
+        <div className="content-wrapper">
+          <Navbar />
+          <Header />
+          <AboutUs />
+          <SpecialMenu />
+          <Chef />
+          <Intro />
+          <Laurels />
+          <Gallery />
+          <Tripadvisor />
+          <FindUs />
+          <Footer />
+        </div>
+      )}
     </div>
   );
 };

@@ -1,24 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineRestaurantMenu } from "react-icons/md";
-import { FaSun, FaMoon } from "react-icons/fa";
 import images from "../../constants/images";
 import "./Navbar.css";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(false);
-
-  useEffect(() => {
-    document.body.classList.toggle("dark-mode", isDarkMode);
-  }, [isDarkMode]);
-
-  const toggleTheme = () => {
-    setIsDarkMode(!isDarkMode);
-  };
 
   return (
-    <nav className={`appNavbar ${isDarkMode ? "dark-mode" : "light-mode"}`}>
+    <nav className="appNavbar">
       <div className="appNavbar-logo">
         <img src={images.azale} alt="appLogo" id="appLogo" />
       </div>
@@ -43,10 +33,6 @@ const Navbar = () => {
         <a href="#login" className="p_opensans">
           Log In / Registration
         </a>
-        <div />
-        <button onClick={toggleTheme} className="theme-toggle">
-          {isDarkMode ? <FaSun /> : <FaMoon />}
-        </button>
       </div>
       <div className="appNavbar-smallscreen">
         <GiHamburgerMenu
@@ -88,9 +74,6 @@ const Navbar = () => {
                 </a>
               </li>
             </ul>
-            <button onClick={toggleTheme} className="theme-toggle">
-              {isDarkMode ? <FaSun /> : <FaMoon />}
-            </button>
           </div>
         )}
       </div>

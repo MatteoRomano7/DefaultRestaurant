@@ -5,14 +5,11 @@
   --font-alt: "Open Sans", sans-serif;
 
   --color-golden: #dcca87;
-  --color-black: #0c0c0c;
+  --color-black: #1a1a1a;
   --color-gray: #545454;
-  --color-hay: #f5efdb;
+  --color-crimson: #f5efdb;
   --color-grey: #aaaaaa;
-  --color-white: #ffffff;
-  --color-azure: #23a3a6;
-  --color-pink: #d96d87;
-
+  --color-white: #f1f1f1;
 }
 
 * {
@@ -20,6 +17,11 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-black);
+  color: var(--color-white);
 }
 
 a {

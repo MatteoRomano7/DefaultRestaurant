@@ -1,25 +1,21 @@
 :root {
-  --color-hay: #f1e5c4;
-  --color-black: #0c0c0c;
-  --color-azure: #313bac;
-  --color-pink: #f5a4a7;
+  --color-background: #1a1a1a;
+  --color-text: #f1f1f1;
+  --color-azure: #4a54d1;
+  --color-pink: #ff7a7e;
   --font-base: "Cormorant Upright", serif;
   --font-alt: "Open Sans", sans-serif;
 }
 
 body {
-  background-color: var(--color-hay);
-  color: var(--color-black);
-  transition: background-color 0.3s, color 0.3s;
+  background-color: var(--color-background);
+  color: var(--color-text);
 }
 
-body.dark-mode {
-  --color-hay: #1a1a1a;
-  --color-black: #f1f1f1;
-  --color-azure: #4a54d1;
-  --color-pink: #ff7a7e;
-  background-color: var(--color-hay);
-  color: var(--color-black);
+.App {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-background);
 }
 
 /* Loader styles */
@@ -29,7 +25,7 @@ body.dark-mode {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: var(--color-black);
+  background-color: var(--color-background);
   position: fixed;
   top: 0;
   left: 0;
@@ -46,7 +42,7 @@ body.dark-mode {
 
 .loader-slogan {
   margin-top: 20px;
-  color: var(--color-hay);
+  color: var(--color-text);
   font-size: 1.2rem;
   text-align: center;
   opacity: 0;
@@ -81,60 +77,19 @@ body.dark-mode {
   }
 }
 
-/* App transition styles */
-.app {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.app.content-visible {
-  opacity: 1;
+/* Content styles */
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .content-wrapper > * {
-  opacity: 0;
-  transform: translateY(20px);
+  opacity: 1;
+  transform: translateY(0);
   transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
-.content-visible .content-wrapper > * {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Add incremental delay for each section */
-.content-wrapper > *:nth-child(1) {
-  transition-delay: 0.1s;
-}
-.content-wrapper > *:nth-child(2) {
-  transition-delay: 0.2s;
-}
-.content-wrapper > *:nth-child(3) {
-  transition-delay: 0.3s;
-}
-.content-wrapper > *:nth-child(4) {
-  transition-delay: 0.4s;
-}
-.content-wrapper > *:nth-child(5) {
-  transition-delay: 0.5s;
-}
-.content-wrapper > *:nth-child(6) {
-  transition-delay: 0.6s;
-}
-.content-wrapper > *:nth-child(7) {
-  transition-delay: 0.7s;
-}
-.content-wrapper > *:nth-child(8) {
-  transition-delay: 0.8s;
-}
-.content-wrapper > *:nth-child(9) {
-  transition-delay: 0.9s;
-}
-.content-wrapper > *:nth-child(10) {
-  transition-delay: 1s;
-}
-
-/* Existing styles */
 .sectionPadding {
   padding: 4rem 6rem;
 }
@@ -150,7 +105,7 @@ body.dark-mode {
   background-size: cover;
   background-repeat: repeat;
   background-attachment: fixed;
-  background-color: var(--color-hay);
+  background-color: var(--color-background);
 }
 
 .appWrapper {
@@ -194,9 +149,9 @@ body.dark-mode {
 
 .customButton {
   background-color: var(--color-pink);
-  color: var(--color-black);
+  color: var(--color-background);
   font-family: var(--font-base);
-  font-weight: 900;
+  font-weight: 700;
   letter-spacing: 0.04em;
   line-height: 28px;
   font-size: 16px;
@@ -209,7 +164,7 @@ body.dark-mode {
 
 .p_cormorant {
   font-family: var(--font-base);
-  color: var(--color-black);
+  color: var(--color-text);
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: capitalize;
@@ -220,7 +175,7 @@ body.dark-mode {
 
 .p_opensans {
   font-family: var(--font-alt);
-  color: var(--color-black);
+  color: var(--color-text);
   font-weight: 400;
   letter-spacing: 0.04em;
   text-transform: capitalize;
@@ -241,31 +196,7 @@ body.dark-mode {
   width: 45px;
 }
 
-.elfsight-app-c08b1302-f2bb-404d-b434-7caad16ed405 {
-  color: white !important;
-}
-
-.theme-toggle {
-  background: none;
-  border: none;
-  color: var(--color-black);
-  font-size: 1.5rem;
-  cursor: pointer;
-  padding: 0.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.dark-mode .theme-toggle {
-  color: var(--color-black);
-}
-
-.dark-mode .p_opensans,
-.dark-mode .p_cormorant {
-  color: var(--color-black);
-}
-
+/* Media queries */
 @media screen and (min-width: 2000px) {
   .customButton,
   .p_cormorant {
