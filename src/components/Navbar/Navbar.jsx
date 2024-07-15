@@ -10,7 +10,7 @@ const Navbar = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
-    document.body.classList.toggle('dark-mode', isDarkMode);
+    document.body.classList.toggle("dark-mode", isDarkMode);
   }, [isDarkMode]);
 
   const toggleTheme = () => {
@@ -18,9 +18,9 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="appNavbar">
+    <nav className={`appNavbar ${isDarkMode ? "dark-mode" : "light-mode"}`}>
       <div className="appNavbar-logo">
-        <img src={images.azale} alt="appLogo" id="appLogo"/>
+        <img src={images.azale} alt="appLogo" id="appLogo" />
       </div>
       <ul className="appNavbar-links">
         <li className="p_opensans">
