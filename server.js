@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
 const newsletterRoutes = require('./server/newsletterRoutes');
+const { listDatabases, listCollections, connectToDatabase } = require('./server/dbConnection');
 
 console.log('Starting server...');
 
@@ -28,8 +29,16 @@ app.use((err, req, res, next) => {
 });
 
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
+app.listen(PORT, async () => {
   console.log(`Server running on port ${PORT}`);
+  
+  try {
+    await connectToDatabase(); // Questo creerà la collezione se non esiste
+    await listDatabases();
+    await listCollections();
+  } catch (error) {
+    console.error("Error checking database configuration:", error);
+  }
 });
 
 process.on('unhandledRejection', (reason, promise) => {
