@@ -9,7 +9,7 @@ const Newsletter = () => {
 
   const handleSubmit = async () => {
     try {
-      const response = await fetch('/api/Newsletter/Subscribe', {
+      const response = await fetch('/api/newsletter/subscribe', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
